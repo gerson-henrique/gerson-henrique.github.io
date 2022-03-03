@@ -8,10 +8,9 @@ import { BiCode, BiMessageAlt } from 'react-icons/bi'
 export default function Nav() {
   const[activeNav, setActiveNav] = useState('#')
 
-  // rs
+
   return (
     <nav>
-      eslint-disable-next-line jsx-a11y/anchor-is-valid
       <a href='#' value='#' className={(activeNav ===  '#') ? 'active' : ''}  onClick={()=> setActiveNav('home')}> <AiOutlineHome /> </a>
       <a href='#about' value='#about' className={(activeNav ===  'about') ? 'active' : ''} onClick={()=> setActiveNav('about')}> <AiOutlineUser /> </a>
       <a href='#experience' value='#experience' className={(activeNav ===  'experience') ? 'active' : ''}  onClick={()=> setActiveNav('experience')} > <BiCode /> </a>
