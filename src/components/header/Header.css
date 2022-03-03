@@ -2,9 +2,9 @@
 
 
 header {
-  height: 100vh;
-  padding-top: 7rem;
-  overflow: hidden;
+  height:fit-content;
+  padding-top: 10vh;
+  
 }
 
 .headercontainer {
@@ -44,7 +44,7 @@ header {
   background:linear-gradient(var(--color-primary), transparent);
   width: 22rem;
   height: 30rem;
-  position: absolute;
+  position:inherit;
   left: calc(50% - 11rem);
   margin-top: 4rem;
   border-radius: 12rem 12rem 0 0;
