@@ -2,7 +2,7 @@
 
 
 header {
-  height:fit-content;
+  height: 100%;
   padding-top: 10vh;
   
 }
@@ -10,7 +10,7 @@ header {
 .headercontainer {
   text-align: center;
   height: 100%;
-  position: relative;
+  position:relative;
 }
 
 
@@ -44,7 +44,7 @@ header {
   background:linear-gradient(var(--color-primary), transparent);
   width: 22rem;
   height: 30rem;
-  position:inherit;
+  position:relative;
   left: calc(50% - 11rem);
   margin-top: 4rem;
   border-radius: 12rem 12rem 0 0;
