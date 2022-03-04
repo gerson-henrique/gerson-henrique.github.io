@@ -18,8 +18,9 @@
 --color-white: #fff;
 --color-light: rgba(255,255,255,0.6);
 --container-width-lg: 75%;
---container-width-md: 85%;
+--container-width-md: 86%;
 --container-width-sm: 90%;
+--container-width-mm: 100%;
 --transition: all 400ms ease;
 }
 
@@ -32,109 +33,111 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
+  font-family: "Poppins", sans-serif;
   background: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
-  background-color: var(--color-bg);
-  background-image: url("https://www.transparenttextures.com/patterns/random-grey-variations.png");
 }
 
- /* *********  General Styles */
+/* general */
 
- .container {
-   width: var(--container-width-lg);
-   margin: 0 auto;
- }
+.container {
+width:  var(--container-width-lg);
+margin: 0 auto;
+}
 
- h1, h2, h3, h4, h5{ 
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-weight: 500;
- }
+}
 
- h1 {
-   font-size:  2.5rem;
- }
+h1 {
+  font-size: 2.5rem;
+}
 
- section{
-   margin-top: 8rem
- }
+section {
+  margin-top: 8rem;
+}
 
- section > h2, section > h5 {
-  text-align: center;
-  color: var(--color-light)
- }
+section > h2, section > h5 {
+text-align: center;
+color: var(--color-light);
+} 
 
- section > h2 {
-   color: var(--color-primary);
-   margin-bottom: 3rem;
- } 
+section > h2 {
+  color: var(--color-primary);
+  margin-bottom: 3rem;
+}
 
- .text-light {
-   color: var(--color-light)
- }
+.text-light {
+  color: var(--color-light);
+}
 
- a {
-   color: var(--color-primary);
-   transition: var(--transition) ;
- }
+a {
+  color: var(--color-primary);
+  transition: var(--transition);
+}
 
- a:hover{
-   color: var(--color-white)
- }
+a:hover {
+  color: var(--color-white);
+}
 
- .btn {
-   width: max-content ;
-   display: inline-block;
-   color: var(--color-primary);
-   padding:0.75rem 1.2rem;
-   border-radius: 0.4rem;
-   cursor: pointer;
-   border: 1px solid var(--color-primary);
-   transition: var(-- transition);
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: var(--color-primary);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background: var(--color-white);
+  color: var(--color-bg);
+  border-color: transparent;
+}
+
+.btn-primary {
+  background:  var(--color-primary);
+  color: var(--color-bg);
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 1200px){
+  /*Tablets [601px -> 1200px]*/
+  .container {
+   width:  var(--container-width-md);
   }
 
-  .btn:hover {
-    background: var(--color-white);
-    color: var(--color-bg);
-    border-color: transparent;
+  .section {
+    margin-top: 6rem
   }
+}
+@media only screen and (max-width: 600px){
+/*Big smartphones [426px -> 600px]*/
+.container {
+  width:  var(--container-width-sm);
+ }
 
-  .btn-primary {
-    background: var(--color-primary);
-    color:  var(--color-bg)
-  }
+ .section > h2 {
+   margin-bottom: 2rem;
+ }
 
-  img {
-    display: block;
-    width: 100%;
-    object-fit: cover;
-  }
+}
+@media only screen and (max-width: 425px){
+/*Small smartphones [325px -> 425px]*/
+.container {
+  width:  var(--container-width-mm);
+ }
 
-
-  /************ (md devices) */
-
-  @media screen and (max-width: 1024px) {
-    .container {
-      width:  var(--container-width-md);
-    }
-    
-    section {
-      margin-top: 2rem;
-    }
-  }
-
-
-
-  /************ (sm devices) */
-
-
-  @media screen and (max-width: 600px) {
-    .container {
-      width:  var(--container-width-sm);
-    }
-
-    section > h2 {
-      margin-bottom: 2rem;
-    }
-  }
+}

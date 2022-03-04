@@ -19,6 +19,11 @@ export default function App() {
   <Footer   />
 
       
+<canvas class="background"
+></canvas>
+  
+<script src="/home/gerson_henrique/Documentos/portif/gerson-ptf/node_modules/particlesjs/src/particles.js"
+></script>
     </body>
   )
 }
