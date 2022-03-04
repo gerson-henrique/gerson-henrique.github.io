@@ -1,26 +1,21 @@
-
-
-
 header {
-  height: 100%;
-  padding-top: 10vh;
-  
+  height: 60rem;
+  padding-top: 7rem;
+  overflow: hidden;
 }
 
 .headercontainer {
   text-align: center;
   height: 100%;
-  position:relative;
+  position: relative;
 }
-
 
 .cta {
   margin-top: 2.5rem;
   display: flex;
-  gap: 1.2rem ;
-  justify-content: center;
+  gap: 1.2rem;
+  justify-content: center
 }
-
 
 .headersocials {
   display: flex;
@@ -33,29 +28,25 @@ header {
 }
 
 .headersocials::after {
-  content:'';
+  content: "";
   width: 1px;
-  height:  2rem;
-  background-color: var(--color-primary);
+  height: 2rem;
+  background: var(--color-primary);
 }
 
-
 .me {
-  background:linear-gradient(var(--color-primary), transparent);
+  background: linear-gradient(var(--color-primary), transparent);
   width: 22rem;
   height: 30rem;
-  position:relative;
+  position: absolute;
   left: calc(50% - 11rem);
   margin-top: 4rem;
   border-radius: 12rem 12rem 0 0;
-  overflow: hidden;
-  padding: 4rem 1.5rem 1.5rem 1.5rem;
-
+  padding: 5rem 1.5rem 1.5rem;
 }
 
-
 .sd {
-  position:absolute;
+  position: absolute;
   right: -2.3rem;
   bottom: 5rem;
   transform: rotate(90deg);
@@ -63,29 +54,23 @@ header {
   font-size: 0.9rem;
 }
 
-
-  /************ (md devices) */
-
-  @media screen and (max-width: 1024px) {
-    header {
-    height: 100vh;
-
-    }
-
+@media only screen and (max-width: 1024px){
+  /*Big smartphones [426px -> 600px]*/
+    
+  .headercontainer{
+    height: fit-content;
   }
-
-
-  /************ (sm devices) */
-
-
-  @media screen and (max-width: 600px) {
-    header {
-    height: 100vh;
+  
+  }
+  
+  @media only screen and (max-width: 600px){
+    /*Big smartphones [426px -> 600px]*/
+      header {
+        height:150vh;
+      }
+    
+     .headersocials, .sd {
+       display: none;
+     }
     
     }
-
-    .headersocials, .sd {
-      display: none ;
-    }
-
-  }
