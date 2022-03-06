@@ -17,6 +17,7 @@
 --color-primary-variant: rgba(109, 23, 23, 0.76);
 --color-white: #fff;
 --color-light: rgba(255,255,255,0.6);
+
 --container-width-lg: 75%;
 --container-width-md: 86%;
 --container-width-sm: 90%;
@@ -55,11 +56,12 @@ h5 {
 }
 
 h1 {
+  font-weight: 00;
   font-size: 2.5rem;
 }
 
 section {
-  margin-top: 8rem;
+  margin-top: 2rem;
 }
 
 section > h2, section > h5 {

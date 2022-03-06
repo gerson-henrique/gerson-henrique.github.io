@@ -54,20 +54,10 @@ header {
   font-size: 0.9rem;
 }
 
-@media only screen and (max-width: 1024px){
-  /*Big smartphones [426px -> 600px]*/
-    
-  .headercontainer{
-    height: fit-content;
-  }
-  
-  }
   
   @media only screen and (max-width: 600px){
     /*Big smartphones [426px -> 600px]*/
-      header {
-        height:150vh;
-      }
+     
     
      .headersocials, .sd {
        display: none;

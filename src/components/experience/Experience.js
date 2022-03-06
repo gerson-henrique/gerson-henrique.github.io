@@ -161,6 +161,13 @@ export default function Experience() {
               <small className="text-light"> Soon...</small>
             </div>
           </article>
+          <article className="experiencedetails">
+            <AiOutlineBulb className="experiencedetailsicon" />
+            <div>
+              <h4>Java</h4>
+              <small className="text-light"> Beginner</small>
+            </div>
+          </article>
         </div>
         </div>
       </div>

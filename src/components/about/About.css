@@ -83,7 +83,7 @@ cursor: default
 
 
   @media screen and (max-width: 600px) {
-    /* .aboutme {
+     .aboutme {
       width: 60%;
       margin:0rem auto 3rem;
     }
@@ -98,6 +98,6 @@ cursor: default
     }
     .aboutcontent p {
       margin: 1.5rem 0 ;
-    } */
+    } 
 
   }
