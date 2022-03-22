@@ -6,6 +6,7 @@ import Footer from './components/footer/Footer'
 import Header from './components/header/Header'
 import Nav from './components/nav/Nav'
 import Portfolio from './components/portfolio/Portfolio'
+import Testimonials from './components/testimonials/Testimonials'
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
   <About />
   <Experience />
   <Portfolio />
+  <Testimonials />
   <Contact />
   <Footer   />
 
